@@ -164,6 +164,7 @@ function startGame() {
   gameOver = false;
   elapsedTime = 0;
   frameCount = 0;
+  reflectCount = 0;
   startTime = Date.now();
   lastTime = performance.now();
 
@@ -277,3 +278,4 @@ function handleGameOver() {
     if (opacity <= 0) increasing = true;
   }, 50);
 }
+
