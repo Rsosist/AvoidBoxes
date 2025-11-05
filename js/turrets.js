@@ -52,9 +52,9 @@ export function resetTurrets() {
 
 export function updateAndDrawTurrets(delta, elapsedSeconds = 0) {
   // 시간 조건으로 다음 포탑 "활성 허용" 플래그
-  if (elapsedSeconds > 5) thirdAllowed = true;
-  if (elapsedSeconds > 10) fourthAllowed = true;
-  if (elapsedSeconds > 30) fifthAllowed = true;
+  if (elapsedSeconds > 10) thirdAllowed = true;
+  if (elapsedSeconds > 20) fourthAllowed = true;
+  if (elapsedSeconds > 40) fifthAllowed = true;
 
   // 각 포탑 업데이트
   turrets.forEach((turret) => {
@@ -165,3 +165,4 @@ export function updateAndDrawTurrets(delta, elapsedSeconds = 0) {
     }
   });
 }
+
